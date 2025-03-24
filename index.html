@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Seu Nome ou Nome da Empresa">
+    <meta name="author" content="Clintin dos Sites">
     <meta name="language" content="pt-BR">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -277,15 +277,8 @@
               
         </section>
     </main>
-    <script>
-        document.querySelectorAll(".faq-question").forEach(button => {
-        button.addEventListener("click", () => {
-        const answer = button.nextElementSibling;
-        const isActive = answer.style.display === "block";
-        document.querySelectorAll(".faq-answer").forEach(ans => ans.style.display = "none");
-        answer.style.display = isActive ? "none" : "block";
-        });
-        });
+    <script src="script.js">
+        
     </script>
 </body>
 </html>
