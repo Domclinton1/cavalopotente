@@ -411,6 +411,7 @@ header {
     }
     .hero .cta-button {
       margin: 30px auto;
+      padding: 10px;
     }
     .problema h2 {
       font-size: 2rem;
