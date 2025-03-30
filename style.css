@@ -384,6 +384,32 @@ header a {
     flex-direction: column;
     gap:1.8rem
   }
+  .bonus {
+    border: 1px solid #d90000;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .bonus-item {
+    display: flex;
+    align-items: center;
+    
+  }
+  .bonus-text {
+    padding: 8px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1rem;
+  }
+  .bonus-img img  {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 15px;
+  }
+  #price strong {
+    font-size: 32px;
+  }
   #p0 {
     font-size:2rem;
     color: var(--dourado-metalico);
@@ -417,6 +443,10 @@ header a {
     flex-direction: column;
     gap: 2rem;
     padding: 10px;
+  }
+  footer a {
+    text-decoration: none;
+    color: #fff;
   }
   .testemunhas {
     text-align:center;
@@ -576,6 +606,10 @@ header a {
     .oferta-box {
       max-width: 480px;
       width: 97%;
+    }
+    .bonus-item {
+      display: flex;
+      flex-direction: column;
     }
     .faq-section .cta-button {
       width:100%;
