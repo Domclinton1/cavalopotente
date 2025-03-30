@@ -11,6 +11,9 @@
     box-sizing: border-box;
 
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
     background-color: var(--preto-profundo);
     color: var(--branco);
@@ -53,7 +56,15 @@ span {
 strong {
     color: var(--dourado-metalico);
 }
-
+.faq-section .cta-button {
+  width: 550px;
+  margin: 50px auto;
+  text-align:center;
+  align-items: center;
+}
+.cience .cta-button  {
+  width: 300px;
+}
 header {
     background-color: var(--vermelho-intenso);
     color: var(--branco);
@@ -61,9 +72,15 @@ header {
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: 60px;
+    font-size: 40px;
     padding: 20px;
     font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    
+}
+header a {
+  text-decoration:none;
+  color:white;
 }
 .cta {
     color: var(--branco);
@@ -90,10 +107,11 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    gap: 2rem;
+    gap: 1.8rem;
     height: 100vh;
     justify-content: center;
     box-shadow: #d90000 1px 1px 1px;
+    text-align: center;
 }
 .problema {
     display: flex;
@@ -220,6 +238,7 @@ header {
     justify-content: space-between;
     text-align: center;
     padding: 20px;
+    
    
   }
   .cience-text h3 {
@@ -231,6 +250,8 @@ header {
   .cience img {
     filter: drop-shadow(0 0 10px #d90000) drop-shadow(0 0 20px );
     transition: filter 0.3s ease;
+    width: 600px;
+
   }
   .cience-text .cta-button {
     width: 80%;
@@ -359,8 +380,42 @@ header {
     border-radius: 20px;
     padding: 30px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:1.8rem
   }
-
+  #p1 {
+    font-size: 3rem;
+  }
+  #p2 {
+    font-size: 5rem;
+  }
+  footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 10px;
+  }
+  .testemunhas {
+    text-align:center;
+  }
+  .bonus strong {
+    font-size: 2.5rem;
+  }
+.feedback-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.8rem;
+  padding: 30px;
+  
+}
+.feedback-img img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 15px;
+}
 
 
 
@@ -456,7 +511,7 @@ header {
     }
     .cience img {
       max-width: 480px;
-      width:97%;
+      width:100%;
       margin: 10px auto;
     }
     .cience-text h3{
@@ -477,7 +532,7 @@ header {
     }
     .ganhos-container img {
       max-width: 480px;
-      width: 97%;
+      width: 100%;
     }
 
     .garantia {
