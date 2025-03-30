@@ -423,7 +423,7 @@ header a {
     header {
       max-width: 480px;
       width: 100%;
-      font-size: 100%;
+      font-size: 22px;
     }
     h2 {
       margin: 0;
@@ -519,7 +519,7 @@ header a {
     }
     .cience-text p {
       width: 100%;
-      font-size: 100%;
+      font-size: 1.5rem;
     }
     .testemunhas {
       display: flex;
@@ -551,5 +551,12 @@ header a {
       width: 100%;
       display: flex; 
       flex-direction: column;
+    }
+    .oferta-box {
+      max-width: 480px;
+      width: 97%;
+    }
+    .faq-section .cta-button {
+      width:100%;
     }
   }
