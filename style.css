@@ -629,3 +629,195 @@ header a {
       width:100%;
     }
   }
+
+  @media (max-width: 768px){
+    header {
+      max-width: 768px;
+      width: 100%;
+      font-size: 22px;
+    }
+    h2 {
+      margin: 0;
+    }
+    section {
+      max-width: 768px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+    }
+    section h2 {
+      font-size: 1.5em;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      max-width: 768px;
+      width: 100%;
+      gap:1.5rem;
+    }
+    .hero h1 {
+      font-size: 2.3rem;
+    }
+    .hero h2 {
+      font-size: 1.8rem;
+      width: 100%;
+      padding: 0;
+    }
+    .hero span {
+      font-size: 1.5rem;
+    }
+    .cta-button {
+      margin: 30px auto;
+      padding: 10px;
+      width: 100%;
+      max-width: fit-content;
+    }
+    .hero .cta-button {
+      margin: 30px auto;
+      padding: 10px;
+      width: 100%;
+      max-width: fit-content;
+    }
+    .problema h2 {
+      font-size: 2rem;
+      width: 100%;
+    }
+    .problema p {
+      width: 100%;
+      font-size: 2rem;
+    }
+    .cta-button {
+      margin: 0;
+      padding: 2px;
+      width:100%;
+      font-size: 13px;
+      text-align: center;
+      align-items: center;
+    }
+    .solution-intro {
+      max-width: 768px;
+      width: 100%;
+      
+    }
+    .solution-intro h2 {
+      font-size: 2rem;
+      width: 100%;
+
+      
+    }
+    .grid-box {
+      max-width: 768px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .info-box {
+      max-width: 768px;
+      width: 100%;
+    }
+    .cience {
+      display: flex;
+      flex-direction: column;
+    }
+    .cience img {
+      max-width: 768px;
+      width:100%;
+      margin: 10px auto;
+    }
+    .cience-text h3{
+      font-size: 2rem;
+    }
+    .cience-text p {
+      width: 100%;
+      font-size: 1.7rem;
+    }
+    .testemunhas {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .feedback-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .feedback-img img {
+      max-width: 300px;
+    }
+    .ganhos-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .ganhos-container h2 {
+      margin: 30px auto;
+      font-size: 2rem;
+    }
+    .ganhos-container img {
+      max-width: 768px;
+      width: 100%;
+    }
+    #p-title {
+      font-size: 1.8rem;
+    }
+    .ganhos-container .cta-button {
+      padding: 30px;
+    }
+    .cta-alerta h3 {
+      font-size:large;
+    }
+    .garantia {
+      max-width: 768px;
+      width: 100%;
+      display: flex; 
+      flex-direction: column;
+    }
+    .garantia img {
+      max-width: 768px;
+      width: 100%;
+    }
+    
+    .garantia-container h2 {
+      font-size: 1.6rem;
+      margin: 30px auto;
+    }
+    .ofertas {
+      max-width: 768px;
+      width: 100%;
+      display: flex; 
+      flex-direction: column;
+    }
+    .oferta-container {
+      font-size: 20px;
+      margin: 30px auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .oferta-container .cta-button {
+      padding: 30px;
+      margin: 0 auto;
+    }
+    .oferta-box {
+      max-width: 768px;
+      width: 97%;
+    }
+    .bonus-item {
+      display: flex;
+      
+    }
+    
+    .faq-section .cta-button {
+      width:100%;
+    }
+  }
