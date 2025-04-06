@@ -57,8 +57,10 @@ strong {
     color: var(--dourado-metalico);
 }
 .faq-section .cta-button {
-  width: 550px;
-  margin: 50px auto;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
   text-align:center;
   align-items: center;
 }
@@ -385,6 +387,9 @@ header a {
     flex-direction: column;
     gap:1.8rem
   }
+  .oferta-box-2 .cta-button {
+    margin: 0 auto;
+  }
   .bonus {
     border: 1px solid #d90000;
     border-radius: 15px;
@@ -470,8 +475,8 @@ header a {
 }
 .redes-sociais {
   display: flex;
-  justify-content: space-around;
-  gap:1rem;
+  justify-content: center;
+  gap:1.4rem;
 }
 .redes-sociais img{
   filter: brightness(0) invert(1);
