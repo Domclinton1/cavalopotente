@@ -261,6 +261,7 @@ header a {
 
   .ganhos-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
@@ -595,6 +596,9 @@ header a {
       display: flex;
       flex-direction: column;
     }
+    .ganhos-container .cta-button {
+      width: fit-content;
+    }
     .ganhos-container img {
       max-width: 480px;
       width: 100%;
@@ -617,14 +621,52 @@ header a {
       display: flex; 
       flex-direction: column;
     }
-    .oferta-box {
+    .oferta-container {
+      width: 100%;
+      margin: 0;
+      padding: 0;
       max-width: 480px;
-      width: 97%;
+    }
+    .oferta-box-2{
+      border: none;
+      max-width: 480px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+
+    }
+    .bonus {
+      max-width: 480px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
     }
     .bonus-item {
       display: flex;
-      flex-direction: column;
-    }
+      margin: 0;
+      align-items: center; /* Alinha verticalmente */
+      justify-content: flex-start; /* Mantém a organização natural */
+      width: 100%; /* Faz a caixa ocupar 95% da largura da tela */
+      max-width: 480px; /* Garante que não ultrapasse os limites */
+      
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid red; /* Mantém a borda vermelha */
+      gap: 15px; /* Adiciona espaço entre imagem e texto */
+  }
+  
+  .bonus-item img {
+      width: 100%; /* Define um tamanho adequado para a imagem */
+      height: auto; /* Mantém a proporção */
+      border-radius: 8px; /* Se precisar arredondar a imagem */
+  }
+  
+  .bonus-item p {
+      flex: 1; /* Faz o texto ocupar o espaço restante */
+      font-size: 16px;
+      line-height: 1.4;
+      text-align: left; /* Mantém o texto alinhado à esquerda */
+  }
     .faq-section .cta-button {
       width:100%;
     }
