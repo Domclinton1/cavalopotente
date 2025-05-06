@@ -138,6 +138,8 @@ header a {
 }
 .bg-hero img {
   width: 100%;
+  filter: drop-shadow(0 0 10px #d90000) drop-shadow(0 0 20px );
+    transition: filter 0.3s ease;
 }
 .problema {
     display: flex;
