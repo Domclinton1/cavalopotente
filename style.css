@@ -79,11 +79,16 @@ header {
     font-family: 'Bebas Neue', sans-serif;
     text-decoration: none;
     
+
 }
+
 header a {
   text-decoration:none;
   color:white;
+  
 }
+
+
 .cta {
     color: var(--branco);
     background-color: var(--vermelho-intenso);
@@ -101,7 +106,8 @@ header a {
 }
 
 .hero {
-    background-image: url(./assets/hero.webp);
+    /*background-image: url(./assets/hero.webp);*/
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -109,11 +115,29 @@ header a {
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    gap: 1.8rem;
-    height: 100vh;
+    gap: 1.3rem;
+    
     justify-content: center;
     box-shadow: #d90000 1px 1px 1px;
     text-align: center;
+}
+.hero p {
+  text-align: left;
+}
+.hero p strong {
+  font-size: 92px;
+}
+.hero ul {
+  text-align: left;
+  list-style:none;
+}
+.bg-hero {
+  max-width: 600px;
+  padding: 0;
+  margin: 0;
+}
+.bg-hero img {
+  width: 100%;
 }
 .problema {
     display: flex;
@@ -539,6 +563,7 @@ header a {
       margin: 30px auto;
       padding: 20px;
     }
+    
     .problema h2 {
       font-size: 2rem;
       width: 100%;
