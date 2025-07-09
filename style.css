@@ -162,7 +162,8 @@ header a {
     text-align: center;
 }
 .cta-button {
-    background: linear-gradient(45deg, #ff0000, #ff4500);
+    /*background: linear-gradient(45deg, #ff0000, #ff4500);*/
+    background: linear-gradient(45deg, rgb(18, 201, 18), rgb(11, 169, 11));
     color: white;
     font-size: 20px;
     font-weight: bold;
