@@ -9,25 +9,28 @@ document.querySelectorAll(".faq-question").forEach(button => {
 
 
 function atualizarContador() {
+    const inicio = new Date(); // Momento atual
+    const fim = new Date(inicio.getTime() + 15 * 60 * 1000); // 15 minutos a partir de agora
+
+    function atualizar() {
         const agora = new Date();
-        const fimDoDia = new Date();
-        fimDoDia.setHours(23, 59, 59, 999); // Define para 23:59:59
-    
-        const diferenca = fimDoDia - agora;
-        
+        const diferenca = fim - agora;
+
         if (diferenca <= 0) {
             document.getElementById("contador").innerText = "Tempo Esgotado!";
             return;
         }
-    
-        const horas = Math.floor((diferenca / (1000 * 60 * 60)) % 24);
+
         const minutos = Math.floor((diferenca / (1000 * 60)) % 60);
         const segundos = Math.floor((diferenca / 1000) % 60);
-    
+
         document.getElementById("contador").innerText = 
-            `${horas}h ${minutos}m ${segundos}s`;
-    
-        setTimeout(atualizarContador, 1000);
+            `${minutos}m ${segundos}s`;
+
+        setTimeout(atualizar, 1000);
     }
-    
-    atualizarContador();
+
+    atualizar();
+}
+
+atualizarContador();
