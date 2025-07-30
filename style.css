@@ -161,6 +161,12 @@ header a {
     width: 60%;
     text-align: center;
 }
+.problema .cta-button {
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  font-size: 1rem;
+}
 .cta-button {
     /*background: linear-gradient(45deg, #ff0000, #ff4500);*/
     background: linear-gradient(45deg, rgb(18, 201, 18), rgb(11, 169, 11));
@@ -241,7 +247,7 @@ header a {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 40px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -285,6 +291,7 @@ header a {
   .cience-text .cta-button {
     width: 80%;
     margin: 20px auto;
+    padding: 10px;
     text-align: center;
   }
 
@@ -293,6 +300,10 @@ header a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+  }
+  .ganhos-container .ganhos .cta-button {
+    width: 100%;
+    padding: 5px;
   }
   .ganhos {
     display: flex;
@@ -515,8 +526,82 @@ header a {
   
 }
 
+.promisse {
+  background-color: #0d0d0d;
+  padding: 20px;
+  overflow: hidden;
+}
 
+.promisse-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
 
+.promisse-carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.carrossel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+.carrossel::-webkit-scrollbar {
+  display: none;
+}
+.p-box {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  border: 1px solid #d90000;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: 2px 3px 6px -2px #d90000;
+}
+
+.p-box i {
+    font-size: 52px;
+}
+
+.metodo-benefits {
+  padding: 0;
+  margin: 0;
+}
+.metodo-carousel {
+  padding: 5px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+.mtd-box {
+  background-color: #0d0d0d;
+  box-shadow: 2px 3px 6px 3px #d90000;
+  font-size: 100%;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+}
+.mtd-box p {
+  font-size: 100%;
+}
   
 
   @media screen and (max-width: 1020px){
@@ -591,9 +676,15 @@ header a {
       margin: 0;
       padding: 2px;
       width:100%;
-      font-size: 13px;
+      font-size: 1rem;
       text-align: center;
       align-items: center;
+    }
+    .container .solution .cta-button {
+      padding: 5px;
+      margin: 0;
+      width: 100%;
+      font-size: 100%;
     }
     .solution-intro {
       max-width: 768px;
@@ -632,19 +723,23 @@ header a {
       width: 100%;
       font-size: 1.7rem;
     }
+    .cience-text .cta-button {
+      padding: 15px;
+      width: 100%;
+    }
     .testemunhas {
       display: flex;
       flex-direction: column;
       text-align: center;
     }
     .feedback-container {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       justify-content: center;
       align-items: center;
     }
     .feedback-img img {
-      max-width: 300px;
+      max-width: 200px;
     }
     .ganhos-container {
       display: flex;
@@ -653,6 +748,13 @@ header a {
     .ganhos-container h2 {
       margin: 30px auto;
       font-size: 2rem;
+    }
+    .ganhos p {
+      line-height: 1;
+    }
+     .ganhos strong {
+      font-size: 20px;
+      line-height: 1;
     }
     .ganhos-container img {
       max-width: 768px;
